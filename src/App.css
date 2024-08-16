@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Estilos generales del contenedor principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  margin: 40px;
+}
+
+.App h1 {
   text-align: center;
+  color: #333333;
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cacacc;
+  border: 1px solid #dcdcdc; 
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; 
+
+/* Estilos de los inputs */
+input[type="text"],
+input[type="email"],
+select {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box; 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos del botón */
+button {
+  background-color: #007bff; 
+  color: #ffffff; 
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Cambia el color del botón al pasar el mouse sobre él */
+button:hover {
+  background-color: #0056b3;
 }
 
+/* Estilos de la card */
 .card {
-  padding: 2em;
+  background-color: #ffffff; 
+  border: 1px solid #dcdcdc; 
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; 
+  margin-top: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.card h2 {
+  margin-top: 0;
+}
+
 }
